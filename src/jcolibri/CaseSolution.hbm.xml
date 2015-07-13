@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+
+  <class name="jcolibri.CaseSolution" table="cbrcase">
+   <id name="id_d" column="id" >  </id>
+<!--  Почему-то не создается автоинкремент - приходится ставить вручную. -->
+
+  	<property name="result" 				column="result"/>
+    <property name="generalState" 			column="generalState"/>
+   	<property name="eliminatedDefects" 		column="eliminatedDefects"/>
+   	<property name="needEliminateDefects" 	column="needEliminateDefects"/>
+   	<property name="staticTestPassed" 		column="staticTestPassed"/>
+   	<property name="dynamicTestPassed" 		column="dynamicTestPassed"/>
+   	<property name="idleTestPassed" 		column="idleTestPassed"/>
+   	<property name="nextInspectionDate" 	column="nextInspectionDate"/>
+   
+ </class>
+
+ 
+</hibernate-mapping>
+
+
+
+

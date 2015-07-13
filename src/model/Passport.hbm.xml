@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 04.02.2011 20:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping default-lazy="false">
+    <class name="model.Passport" table="passport" catalog="cbr_diagnostic_system">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="airTemperatureMax" type="double">
+            <column name="airTemperatureMax" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="airTemperatureMin" type="double">
+            <column name="airTemperatureMin" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="base" type="double">
+            <column name="base" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="bogieFrameMaterial" type="string">
+            <column name="bogieFrameMaterial" />
+        </property>
+        <property name="cargoPerDay" type="int">
+            <column name="cargoPerDay" not-null="true" />
+        </property>
+        <property name="classGroup" type="string">
+            <column name="classGroup" />
+        </property>
+        <property name="crabLiftingSpeed" type="double">
+            <column name="crabLiftingSpeed" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="craneLiftingSpeed" type="double">
+            <column name="craneLiftingSpeed" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="craneMass" type="double">
+            <column name="craneMass" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="cycleQuantity" type="int">
+            <column name="cycleQuantity" not-null="true" />
+        </property>
+        <property name="dueDate" type="timestamp">
+            <column name="dueDate" length="19" />
+        </property>
+        <property name="endGirderMaterial" type="string">
+            <column name="endGirderMaterial" />
+        </property>
+        <property name="environmentInfo" type="string">
+            <column name="environmentInfo" />
+        </property>
+        <property name="expertInfo" type="string">
+            <column name="expertInfo" />
+        </property>
+        <property name="hoistingCapacity" type="int">
+            <column name="hoistingCapacity" not-null="true" />
+        </property>
+        <property name="hoistingCapacityAux" type="double">
+            <column name="hoistingCapacityAux" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistingCapacityMain" type="double">
+            <column name="hoistingCapacityMain" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistingHeight" type="double">
+            <column name="hoistingHeight" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="inspectionsAmount" type="int">
+            <column name="inspectionsAmount" not-null="true" />
+        </property>
+        <property name="installObject" type="string">
+            <column name="installObject" />
+        </property>
+        <property name="lifeTime" type="int">
+            <column name="lifeTime" not-null="true" />
+        </property>
+        <property name="loadLiftingSpeed" type="double">
+            <column name="loadLiftingSpeed" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="locality" type="string">
+            <column name="locality" />
+        </property>
+        <property name="mainBeamMaterial" type="string">
+            <column name="mainBeamMaterial" />
+        </property>
+        <property name="maker" type="string">
+            <column name="maker" />
+        </property>
+        <property name="makerNumber" type="string">
+            <column name="makerNumber" />
+        </property>
+        <property name="model" type="string">
+            <column name="model" />
+        </property>
+        <property name="operationModeGroup" type="string">
+            <column name="operationModeGroup" />
+        </property>
+        <property name="placementLocation" type="string">
+            <column name="placementLocation" />
+        </property>
+        <property name="purpose" type="string">
+            <column name="purpose" />
+        </property>
+        <property name="regNumber" type="string">
+            <column name="regNumber" />
+        </property>
+        <property name="startDate" type="timestamp">
+            <column name="startDate" length="19" />
+        </property>
+        <property name="totalWorkTime" type="int">
+            <column name="totalWorkTime" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" />
+        </property>
+        <property name="wheelLoad" type="double">
+            <column name="wheelLoad" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="width" type="double">
+            <column name="width" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="workInfo" type="string">
+            <column name="workInfo" />
+        </property>
+        <property name="workTemperatureCurrent" type="int">
+            <column name="workTemperatureCurrent" not-null="true" />
+        </property>
+        <property name="workTemperaturePassport" type="int">
+            <column name="workTemperaturePassport" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

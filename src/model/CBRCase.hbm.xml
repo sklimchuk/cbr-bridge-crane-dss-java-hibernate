@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+
+  <class name="model.CBRCase" table="cbrcase">
+   <id name="id" type="long" column="id" >
+     <generator class="native"/>
+   </id>
+	<!-- CaseDescription --> 
+	<property name="comments" 		column="comments"/> 
+	<property name="agreement" 		column="agreement"/>
+	<property name="inspectionDate" 	column="inspectionDate"/>
+	<property name="craneState" 		column="craneState"/>
+	<property name="railDifference"		column="railDifference"/>  
+	<property name="inspectionCause"	column="inspectionCause"/>  
+	
+	<!-- FK from subordinate tables -->
+	 
+	<many-to-one name="Passport"   		class="model.Passport" column="Passport" cascade="all" not-null="true" />
+	<many-to-one name="Resistance" 		class="model.Resistance" column="Resistance" cascade="all" not-null="true" />
+	<many-to-one name="Metallware" 		class="model.Metallware" column="Metallware" cascade="all" not-null="true" />
+	<many-to-one name="Visual"     		class="model.Visual" column="Visual" cascade="all" not-null="true" />
+
+	<!-- CaseSolution -->
+	<property name="result" 		column="result"/>
+        <property name="generalState" 		column="generalState"/>
+   	<property name="eliminatedDefects" 	column="eliminatedDefects"/>
+   	<property name="needEliminateDefects" 	column="needEliminateDefects"/>
+   	<property name="staticTestPassed" 	column="staticTestPassed"/>
+   	<property name="dynamicTestPassed" 	column="dynamicTestPassed"/>
+   	<property name="idleTestPassed" 	column="idleTestPassed"/>
+   	<property name="nextInspectionDate" 	column="nextInspectionDate"/>
+   
+ </class>
+ 
+</hibernate-mapping>
+
+
+
+

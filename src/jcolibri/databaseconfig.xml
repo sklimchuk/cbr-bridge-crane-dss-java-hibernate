@@ -1,0 +1,7 @@
+<DataBaseConfiguration>
+	<HibernateConfigFile>jcolibri/hibernate.cfg.xml</HibernateConfigFile>
+	<DescriptionMappingFile>jcolibri/CaseDescription.hbm.xml</DescriptionMappingFile>
+	<DescriptionClassName>jcolibri.CaseDescription</DescriptionClassName>
+	<SolutionMappingFile>jcolibri/CaseSolution.hbm.xml</SolutionMappingFile>
+	<SolutionClassName>jcolibri.CaseSolution</SolutionClassName>
+</DataBaseConfiguration>

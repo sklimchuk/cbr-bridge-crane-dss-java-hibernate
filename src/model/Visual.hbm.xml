@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 04.02.2011 17:47:19 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping default-lazy="false">
+    <class name="model.Visual" table="visual" catalog="cbr_diagnostic_system">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="audioSignalCracksSafety" type="string">
+            <column name="audioSignalCracksSafety" />
+        </property>
+        <property name="barrelCracksCarriageMov" type="double">
+            <column name="barrelCracksCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="barrelCracksMainLifting" type="double">
+            <column name="barrelCracksMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="barrelFixingCarriageMov" type="double">
+            <column name="barrelFixingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="barrelFixingMainLifting" type="double">
+            <column name="barrelFixingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="barrelGrooveWearCarriageMov" type="double">
+            <column name="barrelGrooveWearCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="barrelGrooveWearMainLifting" type="double">
+            <column name="barrelGrooveWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="barrelThinningCarriageMov" type="double">
+            <column name="barrelThinningCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="barrelThinningMainLifting" type="double">
+            <column name="barrelThinningMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBeatingCarriageMov" type="double">
+            <column name="brakeBeatingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBeatingCraneMov" type="double">
+            <column name="brakeBeatingCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBeatingMainLifting" type="double">
+            <column name="brakeBeatingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBlockCracksCarriageMov" type="double">
+            <column name="brakeBlockCracksCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBlockCracksCraneMov" type="double">
+            <column name="brakeBlockCracksCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBlockCracksMainLifting" type="double">
+            <column name="brakeBlockCracksMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBlockWearCarriageMov" type="double">
+            <column name="brakeBlockWearCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBlockWearCraneMov" type="double">
+            <column name="brakeBlockWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeBlockWearMainLifting" type="double">
+            <column name="brakeBlockWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeCoverWearCarriageMov" type="double">
+            <column name="brakeCoverWearCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeCoverWearCraneMov" type="double">
+            <column name="brakeCoverWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeCoverWearMainLifting" type="double">
+            <column name="brakeCoverWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeElectromagnetCaseElectro" type="string">
+            <column name="brakeElectromagnetCaseElectro" />
+        </property>
+        <property name="brakeFixingCarriageMov" type="double">
+            <column name="brakeFixingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="brakeFixingMainLifting" type="double">
+            <column name="brakeFixingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="controlPanelCaseElectro" type="string">
+            <column name="controlPanelCaseElectro" />
+        </property>
+        <property name="fixedBufferCracksSafety" type="string">
+            <column name="fixedBufferCracksSafety" />
+        </property>
+        <property name="gearToothSpallingCraneMov" type="double">
+            <column name="gearToothSpallingCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="gearToothWearCraneMov" type="double">
+            <column name="gearToothWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistFixingCarriageMov" type="double">
+            <column name="hoistFixingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistFixingMainLifting" type="double">
+            <column name="hoistFixingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistToothSpallingCarriageMov" type="double">
+            <column name="hoistToothSpallingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistToothSpallingCraneMov" type="double">
+            <column name="hoistToothSpallingCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistToothSpallingMainLifting" type="double">
+            <column name="hoistToothSpallingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistToothWearCarriageMov" type="double">
+            <column name="hoistToothWearCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistToothWearCraneMov" type="double">
+            <column name="hoistToothWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hoistToothWearMainLifting" type="double">
+            <column name="hoistToothWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hookAssemblyDeformationsMainLifting" type="double">
+            <column name="hookAssemblyDeformationsMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hookAssemblyJournalWearMainLifting" type="double">
+            <column name="hookAssemblyJournalWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="hookAssemblyVerticalWearMainLifting" type="double">
+            <column name="hookAssemblyVerticalWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="inputDeviceCaseElectro" type="string">
+            <column name="inputDeviceCaseElectro" />
+        </property>
+        <property name="inputDeviceJammingElectro" type="string">
+            <column name="inputDeviceJammingElectro" />
+        </property>
+        <property name="lightStateElectro" type="string">
+            <column name="lightStateElectro" />
+        </property>
+        <property name="limitSwitchCracksSafety" type="string">
+            <column name="limitSwitchCracksSafety" />
+        </property>
+        <property name="limitSwitchPusherSafety" type="string">
+            <column name="limitSwitchPusherSafety" />
+        </property>
+        <property name="limitSwitchSelfResetSafety" type="string">
+            <column name="limitSwitchSelfResetSafety" />
+        </property>
+        <property name="maxAudioSignalCracksSafety" type="string">
+            <column name="maxAudioSignalCracksSafety" />
+        </property>
+        <property name="maxBarrelCracksCarriageMov" type="double">
+            <column name="maxBarrelCracksCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBarrelCracksMainLifting" type="double">
+            <column name="maxBarrelCracksMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBarrelFixingCarriageMov" type="double">
+            <column name="maxBarrelFixingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBarrelFixingMainLifting" type="double">
+            <column name="maxBarrelFixingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBarrelGrooveWearCarriageMov" type="double">
+            <column name="maxBarrelGrooveWearCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBarrelGrooveWearMainLifting" type="double">
+            <column name="maxBarrelGrooveWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBarrelThinningCarriageMov" type="double">
+            <column name="maxBarrelThinningCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBarrelThinningMainLifting" type="double">
+            <column name="maxBarrelThinningMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBeatingCarriageMov" type="double">
+            <column name="maxBrakeBeatingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBeatingCraneMov" type="double">
+            <column name="maxBrakeBeatingCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBeatingMainLifting" type="double">
+            <column name="maxBrakeBeatingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBlockCracksCarriageMov" type="double">
+            <column name="maxBrakeBlockCracksCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBlockCracksCraneMov" type="double">
+            <column name="maxBrakeBlockCracksCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBlockCracksMainLifting" type="double">
+            <column name="maxBrakeBlockCracksMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBlockWearCarriageMov" type="double">
+            <column name="maxBrakeBlockWearCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBlockWearCraneMov" type="double">
+            <column name="maxBrakeBlockWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeBlockWearMainLifting" type="double">
+            <column name="maxBrakeBlockWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeCoverWearCarriageMov" type="double">
+            <column name="maxBrakeCoverWearCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeCoverWearCraneMov" type="double">
+            <column name="maxBrakeCoverWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeCoverWearMainLifting" type="double">
+            <column name="maxBrakeCoverWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeElectromagnetCaseElectro" type="string">
+            <column name="maxBrakeElectromagnetCaseElectro" />
+        </property>
+        <property name="maxBrakeFixingCarriageMov" type="double">
+            <column name="maxBrakeFixingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxBrakeFixingMainLifting" type="double">
+            <column name="maxBrakeFixingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxControlPanelCaseElectro" type="string">
+            <column name="maxControlPanelCaseElectro" />
+        </property>
+        <property name="maxFixedBufferCracksSafety" type="string">
+            <column name="maxFixedBufferCracksSafety" />
+        </property>
+        <property name="maxGearToothSpallingCraneMov" type="double">
+            <column name="maxGearToothSpallingCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxGearToothWearCraneMov" type="double">
+            <column name="maxGearToothWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHoistFixingCarriageMov" type="double">
+            <column name="maxHoistFixingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHoistFixingMainLifting" type="double">
+            <column name="maxHoistFixingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHoistToothSpallingCarriageMov" type="double">
+            <column name="maxHoistToothSpallingCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHoistToothSpallingCraneMov" type="double">
+            <column name="maxHoistToothSpallingCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHoistToothSpallingMainLifting" type="double">
+            <column name="maxHoistToothSpallingMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHoistToothWearCarriageMov" type="double">
+            <column name="maxHoistToothWearCarriageMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHoistToothWearCraneMov" type="double">
+            <column name="maxHoistToothWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHoistToothWearMainLifting" type="double">
+            <column name="maxHoistToothWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHookAssemblyDeformationsMainLifting" type="double">
+            <column name="maxHookAssemblyDeformationsMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHookAssemblyJournalWearMainLifting" type="double">
+            <column name="maxHookAssemblyJournalWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxHookAssemblyVerticalWearMainLifting" type="double">
+            <column name="maxHookAssemblyVerticalWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxInputDeviceCaseElectro" type="string">
+            <column name="maxInputDeviceCaseElectro" />
+        </property>
+        <property name="maxInputDeviceJammingElectro" type="string">
+            <column name="maxInputDeviceJammingElectro" />
+        </property>
+        <property name="maxLightStateElectro" type="string">
+            <column name="maxLightStateElectro" />
+        </property>
+        <property name="maxLimitSwitchCracksSafety" type="string">
+            <column name="maxLimitSwitchCracksSafety" />
+        </property>
+        <property name="maxLimitSwitchPusherSafety" type="string">
+            <column name="maxLimitSwitchPusherSafety" />
+        </property>
+        <property name="maxLimitSwitchSelfResetSafety" type="string">
+            <column name="maxLimitSwitchSelfResetSafety" />
+        </property>
+        <property name="maxMetalHoseInsulationElectro" type="string">
+            <column name="maxMetalHoseInsulationElectro" />
+        </property>
+        <property name="maxMotorCaseElectro" type="string">
+            <column name="maxMotorCaseElectro" />
+        </property>
+        <property name="maxMotorJammingElectro" type="string">
+            <column name="maxMotorJammingElectro" />
+        </property>
+        <property name="maxNonstandardProtectorPresenceElectro" type="string">
+            <column name="maxNonstandardProtectorPresenceElectro" />
+        </property>
+        <property name="maxNovoltageInterlockCracksSafety" type="string">
+            <column name="maxNovoltageInterlockCracksSafety" />
+        </property>
+        <property name="maxRopeBlockGrooveWearMainLifting" type="double">
+            <column name="maxRopeBlockGrooveWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxRopeBlockLedgeBrakeMainLifting" type="double">
+            <column name="maxRopeBlockLedgeBrakeMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxRopeBlockLedgeWearMainLifting" type="double">
+            <column name="maxRopeBlockLedgeWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSignalLampCracksSafety" type="string">
+            <column name="maxSignalLampCracksSafety" />
+        </property>
+        <property name="maxStaringResistorCaseElectro" type="string">
+            <column name="maxStaringResistorCaseElectro" />
+        </property>
+        <property name="maxSwitchCaseElectro" type="string">
+            <column name="maxSwitchCaseElectro" />
+        </property>
+        <property name="maxTackleWearMainLifting" type="double">
+            <column name="maxTackleWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxToothedCouplingToothWearMainLifting" type="double">
+            <column name="maxToothedCouplingToothWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxTransformerInsulationElectro" type="string">
+            <column name="maxTransformerInsulationElectro" />
+        </property>
+        <property name="maxWheelHoneycombDepthCraneMov" type="double">
+            <column name="maxWheelHoneycombDepthCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxWheelHoneycombLengthCraneMov" type="double">
+            <column name="maxWheelHoneycombLengthCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxWheelLedgeWearCraneMov" type="double">
+            <column name="maxWheelLedgeWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxWireInsulationElectro" type="string">
+            <column name="maxWireInsulationElectro" />
+        </property>
+        <property name="metalHoseInsulationElectro" type="string">
+            <column name="metalHoseInsulationElectro" />
+        </property>
+        <property name="motorCaseElectro" type="string">
+            <column name="motorCaseElectro" />
+        </property>
+        <property name="motorJammingElectro" type="string">
+            <column name="motorJammingElectro" />
+        </property>
+        <property name="nonstandardProtectorPresenceElectro" type="string">
+            <column name="nonstandardProtectorPresenceElectro" />
+        </property>
+        <property name="novoltageInterlockCracksSafety" type="string">
+            <column name="novoltageInterlockCracksSafety" />
+        </property>
+        <property name="ropeBlockGrooveWearMainLifting" type="double">
+            <column name="ropeBlockGrooveWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="ropeBlockLedgeBrakeMainLifting" type="double">
+            <column name="ropeBlockLedgeBrakeMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="ropeBlockLedgeWearMainLifting" type="double">
+            <column name="ropeBlockLedgeWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="signalLampCracksSafety" type="string">
+            <column name="signalLampCracksSafety" />
+        </property>
+        <property name="staringResistorCaseElectro" type="string">
+            <column name="staringResistorCaseElectro" />
+        </property>
+        <property name="switchCaseElectro" type="string">
+            <column name="switchCaseElectro" />
+        </property>
+        <property name="tackleWearMainLifting" type="double">
+            <column name="tackleWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="toothedCouplingToothWearMainLifting" type="double">
+            <column name="toothedCouplingToothWearMainLifting" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="transformerInsulationElectro" type="string">
+            <column name="transformerInsulationElectro" />
+        </property>
+        <property name="wheelCracksCraneMov" type="double">
+            <column name="wheelCracksCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wheelHoneycombDepthCraneMov" type="double">
+            <column name="wheelHoneycombDepthCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wheelHoneycombLengthCraneMov" type="double">
+            <column name="wheelHoneycombLengthCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wheelLedgeWearCraneMov" type="double">
+            <column name="wheelLedgeWearCraneMov" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wireInsulationElectro" type="string">
+            <column name="wireInsulationElectro" />
+        </property>
+    </class>
+</hibernate-mapping>

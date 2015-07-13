@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost/cbr_diagnostic_system</property>
+        <property name="connection.username">db_user</property>
+		<property name="connection.password">db_pass</property>
+		
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- hbm2ddl.auto установил я только для создания таблицы Passport - теперь при каждом запуске таблицы пересоздаются, а данные - очищаются-->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        
+    	<!-- 	 1. Здесь не должно быть примапенных файлов, иначе начинаются ошибки.
+    		 2. Должно быть ВСЕГО лишь 2 файла cranedescription.hbm.xml и cranesolution.hbm.xml,
+    		 причем внутри первого нужно указывать все данные о зависимых таблицах.
+    		 3. CRUD-операции не работают в пакете jcolibri.cbrsystem, нужно запускать их из других пакетов, использующих 
+    		 стандартный Hibernate-маппинг (с учетом metallware.hbm.xml, MetallwareCRUD.java и т.п.)
+    	  	<mapping resource="cranedescription.hbm.xml"/>  -->
+    	
+    </session-factory>
+</hibernate-configuration>

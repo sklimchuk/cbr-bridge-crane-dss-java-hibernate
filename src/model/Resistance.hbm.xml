@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 04.02.2011 22:38:27 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping default-lazy="false">
+    <class name="model.Resistance" table="resistance" catalog="cbr_diagnostic_system">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+       <property name="auxLiftBrake" type="double">
+            <column name="auxLiftBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="auxLiftController" type="double">
+            <column name="auxLiftController" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="auxLiftElmotor" type="double">
+            <column name="auxLiftElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="auxLiftLimitSwitch" type="double">
+            <column name="auxLiftLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="auxLiftingInsulBrake" type="double">
+            <column name="auxLiftingInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="auxLiftingRotor" type="double">
+            <column name="auxLiftingRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="auxLiftingStator" type="double">
+            <column name="auxLiftingStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="carriageMovBrake" type="double">
+            <column name="carriageMovBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="carriageMovElmotor" type="double">
+            <column name="carriageMovElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="carriageMovInsulBrake" type="double">
+            <column name="carriageMovInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="carriageMovRotor" type="double">
+            <column name="carriageMovRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="carriageMovStator" type="double">
+            <column name="carriageMovStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="carriageMovementController" type="double">
+            <column name="carriageMovementController" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contAuxLiftingInsulResistAb" type="double">
+            <column name="contAuxLiftingInsulResistAB" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contAuxLiftingInsulResistAo" type="double">
+            <column name="contAuxLiftingInsulResistAO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contAuxLiftingInsulResistBc" type="double">
+            <column name="contAuxLiftingInsulResistBC" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contAuxLiftingInsulResistBo" type="double">
+            <column name="contAuxLiftingInsulResistBO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contAuxLiftingInsulResistCa" type="double">
+            <column name="contAuxLiftingInsulResistCA" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contAuxLiftingInsulResistCo" type="double">
+            <column name="contAuxLiftingInsulResistCO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contBreakerMainContactorInsulResistAb" type="double">
+            <column name="contBreakerMainContactorInsulResistAB" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contBreakerMainContactorInsulResistAo" type="double">
+            <column name="contBreakerMainContactorInsulResistAO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contBreakerMainContactorInsulResistBc" type="double">
+            <column name="contBreakerMainContactorInsulResistBC" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contBreakerMainContactorInsulResistBo" type="double">
+            <column name="contBreakerMainContactorInsulResistBO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contBreakerMainContactorInsulResistCa" type="double">
+            <column name="contBreakerMainContactorInsulResistCA" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contBreakerMainContactorInsulResistCo" type="double">
+            <column name="contBreakerMainContactorInsulResistCO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contCarriageMovInsulResistAb" type="double">
+            <column name="contCarriageMovInsulResistAB" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contCarriageMovInsulResistAo" type="double">
+            <column name="contCarriageMovInsulResistAO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contCarriageMovInsulResistBc" type="double">
+            <column name="contCarriageMovInsulResistBC" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contCarriageMovInsulResistBo" type="double">
+            <column name="contCarriageMovInsulResistBO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contCarriageMovInsulResistCa" type="double">
+            <column name="contCarriageMovInsulResistCA" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contCarriageMovInsulResistCo" type="double">
+            <column name="contCarriageMovInsulResistCO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contFirstCraneMovInsulResistAb" type="double">
+            <column name="contFirstCraneMovInsulResistAB" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contFirstCraneMovInsulResistAo" type="double">
+            <column name="contFirstCraneMovInsulResistAO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contFirstCraneMovInsulResistBc" type="double">
+            <column name="contFirstCraneMovInsulResistBC" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contFirstCraneMovInsulResistBo" type="double">
+            <column name="contFirstCraneMovInsulResistBO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contFirstCraneMovInsulResistCa" type="double">
+            <column name="contFirstCraneMovInsulResistCA" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contFirstCraneMovInsulResistCo" type="double">
+            <column name="contFirstCraneMovInsulResistCO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contMainLiftInsulResistAb" type="double">
+            <column name="contMainLiftInsulResistAB" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contMainLiftInsulResistAo" type="double">
+            <column name="contMainLiftInsulResistAO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contMainLiftInsulResistBc" type="double">
+            <column name="contMainLiftInsulResistBC" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contMainLiftInsulResistBo" type="double">
+            <column name="contMainLiftInsulResistBO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contMainLiftInsulResistCa" type="double">
+            <column name="contMainLiftInsulResistCA" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contMainLiftInsulResistCo" type="double">
+            <column name="contMainLiftInsulResistCO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contSecondCraneMovInsulResistAb" type="double">
+            <column name="contSecondCraneMovInsulResistAB" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contSecondCraneMovInsulResistAo" type="double">
+            <column name="contSecondCraneMovInsulResistAO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contSecondCraneMovInsulResistBc" type="double">
+            <column name="contSecondCraneMovInsulResistBC" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contSecondCraneMovInsulResistBo" type="double">
+            <column name="contSecondCraneMovInsulResistBO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contSecondCraneMovInsulResistCa" type="double">
+            <column name="contSecondCraneMovInsulResistCA" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contSecondCraneMovInsulResistCo" type="double">
+            <column name="contSecondCraneMovInsulResistCO" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="contactResistExpertInfo" type="string">
+            <column name="contactResistExpertInfo" />
+        </property>
+        <property name="contactResistInfo" type="string">
+            <column name="contactResistInfo" />
+        </property>
+        <property name="contactResistMeasuringDevice" type="string">
+            <column name="contactResistMeasuringDevice" />
+        </property>
+        <property name="controlCircuitInsulResist" type="double">
+            <column name="controlCircuitInsulResist" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="craneMovController" type="double">
+            <column name="craneMovController" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="doorBlockLimitSwitch" type="double">
+            <column name="doorBlockLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="electricHeatingUnit" type="double">
+            <column name="electricHeatingUnit" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="firstCarriageMovLimitSwitch" type="double">
+            <column name="firstCarriageMovLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="firstCraneMovBrake" type="double">
+            <column name="firstCraneMovBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="firstCraneMovElmotor" type="double">
+            <column name="firstCraneMovElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="firstCraneMovInsulBrake" type="double">
+            <column name="firstCraneMovInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="firstCraneMovLimitSwitch" type="double">
+            <column name="firstCraneMovLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="firstCraneMovRotor" type="double">
+            <column name="firstCraneMovRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="firstCraneMovStator" type="double">
+            <column name="firstCraneMovStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="insulResistExpertInfo" type="string">
+            <column name="insulResistExpertInfo" />
+        </property>
+        <property name="insulResistInfo" type="string">
+            <column name="insulResistInfo" />
+        </property>
+        <property name="insulResistMeasuringDevice" type="string">
+            <column name="insulResistMeasuringDevice" />
+        </property>
+        <property name="mainLiftBrake" type="double">
+            <column name="mainLiftBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="mainLiftController" type="double">
+            <column name="mainLiftController" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="mainLiftElmotor" type="double">
+            <column name="mainLiftElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="mainLiftLimitLwitch" type="double">
+            <column name="mainLiftLimitLwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="mainLiftingInsulBrake" type="double">
+            <column name="mainLiftingInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="mainLiftingRotor" type="double">
+            <column name="mainLiftingRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="mainLiftingStator" type="double">
+            <column name="mainLiftingStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxAuxLiftBrake" type="double">
+            <column name="maxAuxLiftBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxAuxLiftController" type="double">
+            <column name="maxAuxLiftController" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxAuxLiftElmotor" type="double">
+            <column name="maxAuxLiftElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxAuxLiftLimitSwitch" type="double">
+            <column name="maxAuxLiftLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxAuxLiftingInsulBrake" type="double">
+            <column name="maxAuxLiftingInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxAuxLiftingRotor" type="double">
+            <column name="maxAuxLiftingRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxAuxLiftingStator" type="double">
+            <column name="maxAuxLiftingStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxCarriageMovBrake" type="double">
+            <column name="maxCarriageMovBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxCarriageMovElmotor" type="double">
+            <column name="maxCarriageMovElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxCarriageMovInsulBrake" type="double">
+            <column name="maxCarriageMovInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxCarriageMovRotor" type="double">
+            <column name="maxCarriageMovRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxCarriageMovStator" type="double">
+            <column name="maxCarriageMovStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxCarriageMovementController" type="double">
+            <column name="maxCarriageMovementController" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxContAuxLiftingInsulResist" type="double">
+            <column name="maxContAuxLiftingInsulResist" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxContBreakerMainContactorInsulResist" type="double">
+            <column name="maxContBreakerMainContactorInsulResist" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxContCarriageMovInsulResist" type="double">
+            <column name="maxContCarriageMovInsulResist" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxContFirstCraneMovInsulResist" type="double">
+            <column name="maxContFirstCraneMovInsulResist" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxContMainLiftInsulResist" type="double">
+            <column name="maxContMainLiftInsulResist" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxContSecondCraneMovInsulResist" type="double">
+            <column name="maxContSecondCraneMovInsulResist" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxControlCircuitInsulResist" type="double">
+            <column name="maxControlCircuitInsulResist" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxCraneMovController" type="double">
+            <column name="maxCraneMovController" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxDoorBlockLimitSwitch" type="double">
+            <column name="maxDoorBlockLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxElectricHeatingUnit" type="double">
+            <column name="maxElectricHeatingUnit" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxFirstCarriageMovLimitSwitch" type="double">
+            <column name="maxFirstCarriageMovLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxFirstCraneMovBrake" type="double">
+            <column name="maxFirstCraneMovBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxFirstCraneMovElmotor" type="double">
+            <column name="maxFirstCraneMovElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxFirstCraneMovInsulBrake" type="double">
+            <column name="maxFirstCraneMovInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxFirstCraneMovRotor" type="double">
+            <column name="maxFirstCraneMovRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxFirstCraneMovStator" type="double">
+            <column name="maxFirstCraneMovStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxFirstCraneMovLimitSwitch" type="double">
+            <column name="maxFirstCraneMovLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxMainLiftBrake" type="double">
+            <column name="maxMainLiftBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxMainLiftController" type="double">
+            <column name="maxMainLiftController" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxMainLiftElmotor" type="double">
+            <column name="maxMainLiftElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxMainLiftLimitSwitch" type="double">
+            <column name="maxMainLiftLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxMainLiftingInsulBrake" type="double">
+            <column name="maxMainLiftingInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxMainLiftingRotor" type="double">
+            <column name="maxMainLiftingRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxMainLiftingStator" type="double">
+            <column name="maxMainLiftingStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSafetyPanel" type="double">
+            <column name="maxSafetyPanel" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSecondCarriageMovLimitSwitch" type="double">
+            <column name="maxSecondCarriageMovLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSecondCraneMovBrake" type="double">
+            <column name="maxSecondCraneMovBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSecondCraneMovElmotor" type="double">
+            <column name="maxSecondCraneMovElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSecondCraneMovInsulBrake" type="double">
+            <column name="maxSecondCraneMovInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSecondCraneMovLimitSwitch" type="double">
+            <column name="maxSecondCraneMovLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSecondCraneMovRotor" type="double">
+            <column name="maxSecondCraneMovRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxSecondCraneMovStator" type="double">
+            <column name="maxSecondCraneMovStator" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="safetyPanel" type="double">
+            <column name="safetyPanel" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="secondCarriageMovLimitSwitch" type="double">
+            <column name="secondCarriageMovLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="secondCraneMovBrake" type="double">
+            <column name="secondCraneMovBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="secondCraneMovElmotor" type="double">
+            <column name="secondCraneMovElmotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="secondCraneMovInsulBrake" type="double">
+            <column name="secondCraneMovInsulBrake" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="secondCraneMovLimitSwitch" type="double">
+            <column name="secondCraneMovLimitSwitch" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="secondCraneMovRotor" type="double">
+            <column name="secondCraneMovRotor" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="secondCraneMovStator" type="double">
+            <column name="secondCraneMovStator" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

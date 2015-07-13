@@ -1,1 +1,1 @@
-# cbr-bridge-crane-dss-java-hibernate
+#CBR Bridge Crane Decision Support System with Java and Hibernate
